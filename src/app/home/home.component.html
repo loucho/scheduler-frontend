@@ -1,10 +1,52 @@
 <div class="container-fluid">
-  <div class="jumbotron text-center">
+  <div class="jumbotron">
     <h1>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
-      <span translate>Hello world !</span>
+      <span translate>Your Schedule</span>
     </h1>
     <app-loader [isLoading]="isLoading"></app-loader>
-    <q [hidden]="isLoading">{{ quote }}</q>
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Create your Schedule</h5>
+            <p class="card-text">Can put anything here.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Update your Schedule</h5>
+            <p class="card-text">Or here.</p>
+            <a href="#" class="btn btn-primary">Go somewhere else</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+          <div class="list-group list-group-flush border-bottom scrollarea">
+            <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Friend 1</strong>
+                <small>Last updated at 2022-02-20 15:44</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Friend 2</strong>
+                <small>Last updated at 2022-02-20 15:44</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Friend 3</strong>
+                <small>Last updated at 2022-02-20 15:44</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
