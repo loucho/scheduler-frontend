@@ -29,3 +29,9 @@ q {
   width: 104px;
   height: 104px;
 }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
