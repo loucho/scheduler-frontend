@@ -14,13 +14,14 @@
       </button>
       <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
         <div class="navbar-nav me-auto mb-2 mb-lg-0">
-          <a class="nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
-            <i class="fas fa-home"></i>
-            <span translate>Home</span>
-          </a>
-          <a class="nav-item nav-link text-uppercase" routerLink="/about" routerLinkActive="active">
-            <i class="fas fa-question-circle"></i>
-            <span translate>About</span>
+          <a
+            *ngFor="let item of menu"
+            class="nav-item nav-link text-uppercase"
+            routerLink="{{ item.url }}"
+            routerLinkActive="active"
+          >
+            <i class="fas {{ item.icon }}"></i>
+            <span translate>{{ item.name }}</span>
           </a>
         </div>
         <div class="navbar-nav ml-auto">

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { AuthenticationService, CredentialsService } from '@app/auth';
+import { MenuItem } from './models/MenuItem';
 
 @Component({
   selector: 'app-header',
@@ -10,12 +11,20 @@ import { AuthenticationService, CredentialsService } from '@app/auth';
 })
 export class HeaderComponent implements OnInit {
   menuHidden = true;
+  public menu: Array<MenuItem> = [];
 
   constructor(
     private router: Router,
     private authenticationService: AuthenticationService,
     private credentialsService: CredentialsService
-  ) {}
+  ) {
+    this.menu = [
+      new MenuItem('Dashboard', '/', 'fa-home'),
+      new MenuItem('Groups', '/groups', 'fa-users'),
+      new MenuItem('Friends', '/friends', 'fa-user-friends'),
+      new MenuItem('Schedule', '/schedule', 'fa-calendar-alt'),
+    ];
+  }
 
   ngOnInit() {}
 
