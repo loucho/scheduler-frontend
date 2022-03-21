@@ -1,0 +1,122 @@
+<div class="container">
+  <div class="col-md-12 mb-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center text-center">
+          <img src="/assets/user_placeholder.png" class="rounded-circle" width="150" />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="card mb-3">
+      <div class="card-body">
+        <div formGroupName="profile" class="container">
+          <div class="row">
+            <label for="username">Username: </label>
+            <input id="username" type="text" formControlName="username" />
+          </div>
+
+          <div class="row">
+            <label for="name">Name: </label>
+            <input id="name" type="text" formControlName="name" />
+          </div>
+
+          <div class="row">
+            <label for="email">Email: </label>
+            <input id="email" type="text" formControlName="email" />
+          </div>
+
+          <div class="row">
+            <label for="phone">Phone: </label>
+            <input id="phone" type="text" formControlName="phone" />
+          </div>
+
+          <div class="row">
+            <label for="timezone">Phone: </label>
+            <select id="timezone" formControlName="timezone">
+              <option selected="true" value="1">Tokyo, Japan (JST UTC+9)</option>
+              <option value="1">Berlin, Germany (CET UTC+1)</option>
+              <option value="1">Mexico City, Mexico (CST UTC-6)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <div formGroupName="profile" class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <select id="service" formControlName="service">
+                <option selected="true" value="1">Steam</option>
+                <option value="1">Battle Net</option>
+                <option value="1">PSN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="handle" type="text" formControlName="handle" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5">
+              <select id="service" formControlName="service">
+                <option selected="true" value="1">Steam</option>
+                <option value="1">Battle Net</option>
+                <option value="1">PSN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="handle" type="text" formControlName="handle" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5">
+              <select id="service" formControlName="service">
+                <option selected="true" value="1">Steam</option>
+                <option value="1">Battle Net</option>
+                <option value="1">PSN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="handle" type="text" formControlName="handle" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5">
+              <select id="service" formControlName="service">
+                <option selected="true" value="1">Steam</option>
+                <option value="1">Battle Net</option>
+                <option value="1">PSN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="handle" type="text" formControlName="handle" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5">
+              <select id="service" formControlName="service">
+                <option selected="true" value="1">Steam</option>
+                <option value="1">Battle Net</option>
+                <option value="1">PSN</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <input id="handle" type="text" formControlName="handle" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-sm-12">
+        <a class="btn btn-primary" target="__blank" routerLink="/profile/view/1">Save</a>
+      </div>
+    </div>
+  </div>
+</div>
