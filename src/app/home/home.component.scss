@@ -35,3 +35,12 @@ q {
   justify-content: center;
   align-items: center;
 }
+.col-sm-2 {
+  display: grid;
+  align-items: stretch;
+  background-color: #c4c4c4;
+}
+.space-name {
+  color: #190061;
+  text-align: left;
+}
