@@ -18,6 +18,12 @@
   min-height: 100%;
 }
 
+.form-control {
+  border: 1px solid #adadad;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
 .ng-invalid.ng-touched:not(form) {
   border-left: 4px solid theme-color("danger");
 }
@@ -26,4 +32,19 @@
   .container {
     width: 100%;
   }
+}
+
+.form-check-input {
+  border: 1px solid #adadad;
+  box-sizing: border-box;
+  border-radius: 16px;
+  width: 35px;
+  height: 18px;
+}
+
+.remainder {
+  margin-left: 13px;
+}
+.btn {
+  background: #45a29e;
 }
